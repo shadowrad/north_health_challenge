@@ -5,7 +5,7 @@ from typing import Dict, List, Set, Tuple
 class PairFinder:
     def __init__(self, unordered_array: List[int]):
         self.unrepeated_array = list(set(unordered_array))
-        self.sum_map = defaultdict(set)
+        self.sum_map: Dict[int, Set[Tuple[int, int]]] = defaultdict(set)
 
     def find_pairs_with_equal_sum(
         self, minimum_required_pairs: int = 1
