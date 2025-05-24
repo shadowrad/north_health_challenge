@@ -6,6 +6,8 @@ This is for the NorthHealth challenge.
 * I took an OOP approch.  
 * In the challenge is shown only examples with more than 2 tupples, as I was not sure if it was a requirement or not I added an optional parameter to choose from.
 * In example the array is a set but I added a clean in case a list is sent.   
+* The app had 0 libraries to work, the only things to install were standar quality code libraries. 
+* did not dockerize becuause 
 
 ## Prerequisites
 
@@ -28,14 +30,14 @@ This is for the NorthHealth challenge.
 3. **Create and activate virtual environment:**
 
     ```sh
-    python -m venv .venv
-    source .venv/bin/activate
+    pyenv virtualenv north_venv
+    pyenv activate north_venv
     ```
 
 4. **Install dependencies:**
 
     ```sh
-    pip install -r requirements.txt
+    pip install -r requirements-dev.txt
     ```
 
 ## Usage

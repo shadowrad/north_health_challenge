@@ -1,5 +1,5 @@
-
 from models.pair_finder import PairFinder
+
 
 def print_pairs_by_sum(arr: list[int]) -> None:
     find_pairs = PairFinder(arr)
@@ -13,9 +13,9 @@ def print_pairs_by_sum(arr: list[int]) -> None:
 if __name__ == "__main__":
     sample_inputs = [
         [6, 4, 12, 10, 22, 54, 32, 42, 21, 11],
-        [4, 23, 65, 67, 24, 12, 86]
+        [4, 23, 65, 67, 24, 12, 86],
     ]
-    
+
     for arr in sample_inputs:
         print(f"Input: {arr}")
         print_pairs_by_sum(arr)
